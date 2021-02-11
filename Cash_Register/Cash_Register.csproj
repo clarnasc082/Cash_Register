@@ -89,5 +89,17 @@
   <ItemGroup>
     <None Include="Resources\5ade2f6e4ffc7c74845b651d3e702888.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\345056__azumarill__epson-receipt-printer3.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\493163__breviceps__buzzer-sounds-wrong-answer-error.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\221766__waveplay__game-fx.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\517754__danlucaz__game-fx-10.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

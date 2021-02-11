@@ -127,4 +127,16 @@
   <data name="5ade2f6e4ffc7c74845b651d3e702888" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\5ade2f6e4ffc7c74845b651d3e702888.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="_221766__waveplay__game_fx" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\221766__waveplay__game-fx.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_345056__azumarill__epson_receipt_printer3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\345056__azumarill__epson-receipt-printer3.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_493163__breviceps__buzzer_sounds_wrong_answer_error" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\493163__breviceps__buzzer-sounds-wrong-answer-error.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_517754__danlucaz__game_fx_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\517754__danlucaz__game-fx-10.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

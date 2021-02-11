@@ -61,6 +61,42 @@ namespace Cash_Register.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream _221766__waveplay__game_fx {
+            get {
+                return ResourceManager.GetStream("_221766__waveplay__game_fx", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream _345056__azumarill__epson_receipt_printer3 {
+            get {
+                return ResourceManager.GetStream("_345056__azumarill__epson_receipt_printer3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream _493163__breviceps__buzzer_sounds_wrong_answer_error {
+            get {
+                return ResourceManager.GetStream("_493163__breviceps__buzzer_sounds_wrong_answer_error", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream _517754__danlucaz__game_fx_10 {
+            get {
+                return ResourceManager.GetStream("_517754__danlucaz__game_fx_10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap _5ade2f6e4ffc7c74845b651d3e702888 {

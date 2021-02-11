@@ -8,11 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
+using System.Media;
 
 namespace Cash_Register
 {
     public partial class Form1 : Form
-    { 
+    {
         double paintbrushCost = 5.15;
         double polymerClayCost = 4.00;
         double erasorCost = 3.25;
@@ -36,17 +37,58 @@ namespace Cash_Register
 
         private void button1_Click(object sender, EventArgs e)
         {
-            paintbrushs = Convert.ToDouble(textBoxPaintbrush.Text);
-            polymerClay = Convert.ToDouble(textBoxClay.Text);
-            erasor = Convert.ToDouble(textBoxErasor.Text);
+            label2.BackColor = Color.White;
+            label2.Text = "";
 
-            subTotalCost = paintbrushs * paintbrushCost + erasor * erasorCost + polymerClay * polymerClayCost;
-            taxAmount = taxValue * subTotalCost;
-            finalPrice = taxAmount + subTotalCost;
+            try
+            {
+                SoundPlayer player = new SoundPlayer(Properties.Resources._517754__danlucaz__game_fx_10);
+                player.Play();
 
-            calculateTotalLabel.Text += $" {subTotalCost.ToString("C")}";
-            label4.Text += $" {taxAmount.ToString("C")}";
-            label5.Text += $" {finalPrice.ToString("C")}";
+                paintbrushs = Convert.ToDouble(textBoxPaintbrush.Text);
+                polymerClay = Convert.ToDouble(textBoxClay.Text);
+                erasor = Convert.ToDouble(textBoxErasor.Text);
+
+                subTotalCost = paintbrushs * paintbrushCost + erasor * erasorCost + polymerClay * polymerClayCost;
+                taxAmount = taxValue * subTotalCost;
+                finalPrice = taxAmount + subTotalCost;
+
+                calculateTotalLabel.Text += $" {subTotalCost.ToString("C")}";
+                label4.Text += $" {taxAmount.ToString("C")}";
+                label5.Text += $" {finalPrice.ToString("C")}";
+            }
+            catch
+            {
+                SoundPlayer Player = new SoundPlayer(Properties.Resources._493163__breviceps__buzzer_sounds_wrong_answer_error);
+                Player.Play();
+
+                label2.Text += $"\n\n xxxx NUMBERS ONLY xxxx";
+                label2.Text += $"\n\n xxxx NUMBERS ONLY xxxx";
+                label2.Text += $"\n\n xxxx NUMBERS ONLY xxxx";
+                label2.Text += $"\n\n xxxx NUMBERS ONLY xxxx";
+                label2.Text += $"\n\n xxxx NUMBERS ONLY xxxx";
+                label2.Text += $"\n\n xxxx NUMBERS ONLY xxxx";
+                label2.Text += $"\n\n xxxx NUMBERS ONLY xxxx";
+                label2.Text += $"\n\n xxxx NUMBERS ONLY xxxx";
+                label2.Text += $"\n\n xxxx NUMBERS ONLY xxxx";
+                label2.Text += $"\n\n xxxx NUMBERS ONLY xxxx";
+                label2.BackColor = Color.Red;
+                ;
+            }
+
+
+
+            //paintbrushs = Convert.ToDouble(textBoxPaintbrush.Text);
+            //polymerClay = Convert.ToDouble(textBoxClay.Text);
+            //erasor = Convert.ToDouble(textBoxErasor.Text);
+
+            //subTotalCost = paintbrushs * paintbrushCost + erasor * erasorCost + polymerClay * polymerClayCost;
+            //taxAmount = taxValue * subTotalCost;
+            //finalPrice = taxAmount + subTotalCost;
+
+            //calculateTotalLabel.Text += $" {subTotalCost.ToString("C")}";
+            //label4.Text += $" {taxAmount.ToString("C")}";
+            //label5.Text += $" {finalPrice.ToString("C")}";
 
         }
 
@@ -72,10 +114,36 @@ namespace Cash_Register
 
         private void changeButton_Click(object sender, EventArgs e)
         {
-            amountTendered = Convert.ToDouble(textBox1.Text);           
-            changeAmount = amountTendered - finalPrice;
-            label6.Text += $" {changeAmount.ToString("C")}";
-            
+            label2.BackColor = Color.White;
+            label2.Text = "";
+            try
+            {
+                SoundPlayer player = new SoundPlayer(Properties.Resources._517754__danlucaz__game_fx_10);
+                player.Play();
+
+                amountTendered = Convert.ToDouble(textBox1.Text);
+                changeAmount = amountTendered - finalPrice;
+                label6.Text = $" {changeAmount.ToString("C")}";
+            }
+            catch
+            {
+                SoundPlayer Player = new SoundPlayer(Properties.Resources._493163__breviceps__buzzer_sounds_wrong_answer_error);
+                Player.Play();
+
+                label2.Text += $"\n\n xxxx NUMBERS ONLY xxxx";
+                label2.Text += $"\n\n xxxx NUMBERS ONLY xxxx";
+                label2.Text += $"\n\n xxxx NUMBERS ONLY xxxx";
+                label2.Text += $"\n\n xxxx NUMBERS ONLY xxxx";
+                label2.Text += $"\n\n xxxx NUMBERS ONLY xxxx";
+                label2.Text += $"\n\n xxxx NUMBERS ONLY xxxx";
+                label2.Text += $"\n\n xxxx NUMBERS ONLY xxxx";
+                label2.Text += $"\n\n xxxx NUMBERS ONLY xxxx";
+                label2.Text += $"\n\n xxxx NUMBERS ONLY xxxx";
+                label2.Text += $"\n\n xxxx NUMBERS ONLY xxxx";
+                label2.BackColor = Color.Red;
+                ;
+            }
+
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -104,6 +172,11 @@ namespace Cash_Register
         }
         private void RecieptButton_Click(object sender, EventArgs e)
         {
+            SoundPlayer player = new SoundPlayer(Properties.Resources._345056__azumarill__epson_receipt_printer3);
+
+            player.Play();
+
+
             label2.Text += $"\n                Amazingly Cheap Art Shop .inc";
             Refresh();
             Thread.Sleep(500);
@@ -146,6 +219,8 @@ namespace Cash_Register
 
         private void neOrderButton_Click(object sender, EventArgs e)
         {
+            label2.BackColor = Color.White;
+
             textBoxPaintbrush.Text = "";
             textBoxClay.Text = "";
             textBoxErasor.Text = "";
@@ -161,7 +236,22 @@ namespace Cash_Register
 
         private void oddButton_Click(object sender, EventArgs e)
         {
+            SoundPlayer player = new SoundPlayer(Properties.Resources._221766__waveplay__game_fx);
+            player.Play();
+
             this.BackColor = Color.DeepPink;
+            label2.Text += $"\n\n CONGRAGULATIONS!!!!!!";
+            Refresh();
+            Thread.Sleep(500);
+            label2.Text += $"\n\n You found the hidden color!";
+            Refresh();
+            Thread.Sleep(500);
+            label2.Text += $"\n\n Good Job";
+            Refresh();
+            Thread.Sleep(500);
+            label2.Text += $"\n\n Now go pay for your puchase";
+            Refresh();
+            Thread.Sleep(500);
         }
 
         private void textBoxPaintbrush_TextChanged(object sender, EventArgs e)
