@@ -41,7 +41,7 @@ namespace Cash_Register
             this.totalButton = new System.Windows.Forms.Button();
             this.subTotalLabel = new System.Windows.Forms.Label();
             this.totalLbel = new System.Windows.Forms.Label();
-            this.blockLbel = new System.Windows.Forms.Label();
+            this.blockLabel = new System.Windows.Forms.Label();
             this.tenderedLabel = new System.Windows.Forms.Label();
             this.tenderedTextBox = new System.Windows.Forms.TextBox();
             this.changeButton = new System.Windows.Forms.Button();
@@ -49,21 +49,21 @@ namespace Cash_Register
             this.RecieptButton = new System.Windows.Forms.Button();
             this.mainReceiptLabel = new System.Windows.Forms.Label();
             this.newOrderButton = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
+            this.bigLineLabel = new System.Windows.Forms.Label();
             this.oddButton = new System.Windows.Forms.Button();
             this.calculateTotalLabel = new System.Windows.Forms.Label();
             this.taxLabel = new System.Windows.Forms.Label();
             this.calculateTaxLabel = new System.Windows.Forms.Label();
             this.calculateTotalsLabel = new System.Windows.Forms.Label();
             this.ChangeLabelCalculation = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lineLabel = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.picPaintBox2 = new System.Windows.Forms.PictureBox();
+            this.picPaintBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPaintBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPaintBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -85,7 +85,6 @@ namespace Cash_Register
             this.textBoxPaintbrush.Name = "textBoxPaintbrush";
             this.textBoxPaintbrush.Size = new System.Drawing.Size(48, 25);
             this.textBoxPaintbrush.TabIndex = 4;
-            this.textBoxPaintbrush.TextChanged += new System.EventHandler(this.textBoxPaintbrush_TextChanged);
             // 
             // label1
             // 
@@ -130,7 +129,6 @@ namespace Cash_Register
             this.textBoxErasor.Name = "textBoxErasor";
             this.textBoxErasor.Size = new System.Drawing.Size(48, 25);
             this.textBoxErasor.TabIndex = 9;
-            this.textBoxErasor.TextChanged += new System.EventHandler(this.textBoxErasor_TextChanged);
             // 
             // erasorLabel
             // 
@@ -180,15 +178,15 @@ namespace Cash_Register
             this.totalLbel.Text = "Total";
             this.totalLbel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // blockLbel
+            // blockLabel
             // 
-            this.blockLbel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.blockLbel.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.blockLbel.Location = new System.Drawing.Point(12, 356);
-            this.blockLbel.Name = "blockLbel";
-            this.blockLbel.Size = new System.Drawing.Size(196, 10);
-            this.blockLbel.TabIndex = 15;
-            this.blockLbel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.blockLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.blockLabel.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.blockLabel.Location = new System.Drawing.Point(12, 356);
+            this.blockLabel.Name = "blockLabel";
+            this.blockLabel.Size = new System.Drawing.Size(196, 10);
+            this.blockLabel.TabIndex = 15;
+            this.blockLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tenderedLabel
             // 
@@ -207,7 +205,6 @@ namespace Cash_Register
             this.tenderedTextBox.Name = "tenderedTextBox";
             this.tenderedTextBox.Size = new System.Drawing.Size(48, 25);
             this.tenderedTextBox.TabIndex = 17;
-            this.tenderedTextBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // changeButton
             // 
@@ -234,7 +231,6 @@ namespace Cash_Register
             this.changeLabel.TabIndex = 19;
             this.changeLabel.Text = "Change";
             this.changeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.changeLabel.Click += new System.EventHandler(this.label2_Click);
             // 
             // RecieptButton
             // 
@@ -277,15 +273,15 @@ namespace Cash_Register
             this.newOrderButton.UseVisualStyleBackColor = false;
             this.newOrderButton.Click += new System.EventHandler(this.neOrderButton_Click);
             // 
-            // label3
+            // bigLineLabel
             // 
-            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label3.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(630, 103);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(145, 425);
-            this.label3.TabIndex = 23;
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bigLineLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.bigLineLabel.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bigLineLabel.Location = new System.Drawing.Point(630, 103);
+            this.bigLineLabel.Name = "bigLineLabel";
+            this.bigLineLabel.Size = new System.Drawing.Size(145, 425);
+            this.bigLineLabel.TabIndex = 23;
+            this.bigLineLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // oddButton
             // 
@@ -349,15 +345,15 @@ namespace Cash_Register
             this.ChangeLabelCalculation.TabIndex = 31;
             this.ChangeLabelCalculation.Click += new System.EventHandler(this.label6_Click);
             // 
-            // label7
+            // lineLabel
             // 
-            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label7.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(596, 103);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(10, 425);
-            this.label7.TabIndex = 32;
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lineLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.lineLabel.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lineLabel.Location = new System.Drawing.Point(596, 103);
+            this.lineLabel.Name = "lineLabel";
+            this.lineLabel.Size = new System.Drawing.Size(10, 425);
+            this.lineLabel.TabIndex = 32;
+            this.lineLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox2
             // 
@@ -369,26 +365,25 @@ namespace Cash_Register
             this.pictureBox2.TabIndex = 27;
             this.pictureBox2.TabStop = false;
             // 
-            // pictureBox4
+            // picPaintBox2
             // 
-            this.pictureBox4.Image = global::Cash_Register.Properties.Resources._5ade2f6e4ffc7c74845b651d3e702888;
-            this.pictureBox4.Location = new System.Drawing.Point(647, 402);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(110, 108);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 25;
-            this.pictureBox4.TabStop = false;
+            this.picPaintBox2.Image = global::Cash_Register.Properties.Resources._5ade2f6e4ffc7c74845b651d3e702888;
+            this.picPaintBox2.Location = new System.Drawing.Point(647, 402);
+            this.picPaintBox2.Name = "picPaintBox2";
+            this.picPaintBox2.Size = new System.Drawing.Size(110, 108);
+            this.picPaintBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picPaintBox2.TabIndex = 25;
+            this.picPaintBox2.TabStop = false;
             // 
-            // pictureBox3
+            // picPaintBox1
             // 
-            this.pictureBox3.Image = global::Cash_Register.Properties.Resources.istockphoto_539327234_612x612;
-            this.pictureBox3.Location = new System.Drawing.Point(647, 120);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(110, 104);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 24;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.picPaintBox1.Image = global::Cash_Register.Properties.Resources.istockphoto_539327234_612x612;
+            this.picPaintBox1.Location = new System.Drawing.Point(647, 120);
+            this.picPaintBox1.Name = "picPaintBox1";
+            this.picPaintBox1.Size = new System.Drawing.Size(110, 104);
+            this.picPaintBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picPaintBox1.TabIndex = 24;
+            this.picPaintBox1.TabStop = false;
             // 
             // pictureBox1
             // 
@@ -406,16 +401,16 @@ namespace Cash_Register
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(787, 538);
-            this.Controls.Add(this.label7);
+            this.Controls.Add(this.lineLabel);
             this.Controls.Add(this.ChangeLabelCalculation);
             this.Controls.Add(this.calculateTotalsLabel);
             this.Controls.Add(this.calculateTaxLabel);
             this.Controls.Add(this.calculateTotalLabel);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.oddButton);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.picPaintBox2);
+            this.Controls.Add(this.picPaintBox1);
+            this.Controls.Add(this.bigLineLabel);
             this.Controls.Add(this.newOrderButton);
             this.Controls.Add(this.mainReceiptLabel);
             this.Controls.Add(this.RecieptButton);
@@ -423,7 +418,7 @@ namespace Cash_Register
             this.Controls.Add(this.changeButton);
             this.Controls.Add(this.tenderedTextBox);
             this.Controls.Add(this.tenderedLabel);
-            this.Controls.Add(this.blockLbel);
+            this.Controls.Add(this.blockLabel);
             this.Controls.Add(this.totalLbel);
             this.Controls.Add(this.taxLabel);
             this.Controls.Add(this.subTotalLabel);
@@ -440,10 +435,9 @@ namespace Cash_Register
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "The Amazingly Cheap Art Shop";
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPaintBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPaintBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -464,7 +458,7 @@ namespace Cash_Register
         private System.Windows.Forms.Button totalButton;
         private System.Windows.Forms.Label subTotalLabel;
         private System.Windows.Forms.Label totalLbel;
-        private System.Windows.Forms.Label blockLbel;
+        private System.Windows.Forms.Label blockLabel;
         private System.Windows.Forms.Label tenderedLabel;
         private System.Windows.Forms.TextBox tenderedTextBox;
         private System.Windows.Forms.Button changeButton;
@@ -472,9 +466,9 @@ namespace Cash_Register
         private System.Windows.Forms.Button RecieptButton;
         private System.Windows.Forms.Label mainReceiptLabel;
         private System.Windows.Forms.Button newOrderButton;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Label bigLineLabel;
+        private System.Windows.Forms.PictureBox picPaintBox1;
+        private System.Windows.Forms.PictureBox picPaintBox2;
         private System.Windows.Forms.Button oddButton;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label calculateTotalLabel;
@@ -482,7 +476,7 @@ namespace Cash_Register
         private System.Windows.Forms.Label calculateTaxLabel;
         private System.Windows.Forms.Label calculateTotalsLabel;
         private System.Windows.Forms.Label ChangeLabelCalculation;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lineLabel;
     }
 }
 

@@ -78,18 +78,6 @@ namespace Cash_Register
                 ;
             }
         }
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-
-        }
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
         private void calculateTotalLabel_Click(object sender, EventArgs e)
         {
             calculateTotalLabel.Text = $"{finalPrice.ToString("C")}";
@@ -139,14 +127,6 @@ namespace Cash_Register
         {
             ChangeLabelCalculation.Text = $"{changeAmount.ToString("C")}";
         }
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-        private void textBoxErasor_TextChanged(object sender, EventArgs e)
-        {
-
-        }
         private void RecieptButton_Click(object sender, EventArgs e)
         {
             //Print Receipt function
@@ -164,27 +144,27 @@ namespace Cash_Register
             mainReceiptLabel.Text += $"\n\n         Paintbrushes         x {paintbrushs} @ {paintbrushCost.ToString("C")}";
             Refresh();
             Thread.Sleep(500);
-            mainReceiptLabel.Text += $"\n          PolymerClay          x {polymerClay} @ {polymerClayCost.ToString("C")}";
+            mainReceiptLabel.Text += $"\n         PolymerClay           x {polymerClay} @ {polymerClayCost.ToString("C")}";
             Refresh();
             Thread.Sleep(500);
             mainReceiptLabel.Text += $"\n         Bunny Erasors       x {erasor} @ {erasorCost.ToString("C")}";
             Refresh();
             Thread.Sleep(500);
 
-            mainReceiptLabel.Text += $"\n\n         Subtotal           {subTotalCost.ToString("C")}";
+            mainReceiptLabel.Text += $"\n\n         Subtotal                            {subTotalCost.ToString("C")}";
             Refresh();
             Thread.Sleep(500);
-            mainReceiptLabel.Text += $"\n         Tax                      {taxAmount.ToString("C")}";
+            mainReceiptLabel.Text += $"\n         Tax                                       {taxAmount.ToString("C")}";
             Refresh();
             Thread.Sleep(500);
-            mainReceiptLabel.Text += $"\n         Total                  {finalPrice.ToString("C")}";
+            mainReceiptLabel.Text += $"\n         Total                                   {finalPrice.ToString("C")}";
             Refresh();
             Thread.Sleep(500);
-
-            mainReceiptLabel.Text += $"\n\n         Tendered        {amountTendered.ToString("C")}";
+             
+            mainReceiptLabel.Text += $"\n\n         Tendered                          {amountTendered.ToString("C")}";
             Refresh();
             Thread.Sleep(500);
-            mainReceiptLabel.Text += $"\n          Change            {changeAmount.ToString("C")}";
+            mainReceiptLabel.Text += $"\n         Change                               {changeAmount.ToString("C")}";
             Refresh();
             Thread.Sleep(500);
 
@@ -208,6 +188,19 @@ namespace Cash_Register
             tenderedTextBox.Text = "";
             ChangeLabelCalculation.Text = "";
             mainReceiptLabel.Text = "";
+
+            paintbrushCost = 0;
+            polymerClayCost = 0;
+            erasorCost = 0;
+            paintbrushs = 0;
+            polymerClay = 0;
+            erasor = 0;
+            subTotalCost = 0;
+            taxValue = 0;
+            amountTendered = 0;
+            taxAmount = 0;
+            finalPrice = 0;
+            changeAmount = 0;
         }
         private void oddButton_Click(object sender, EventArgs e)
         {
@@ -228,9 +221,6 @@ namespace Cash_Register
             mainReceiptLabel.Text += $"\n\n Now go pay for your puchase";
             Refresh();
             Thread.Sleep(500);
-        }
-        private void textBoxPaintbrush_TextChanged(object sender, EventArgs e)
-        {
 
         }
     }
